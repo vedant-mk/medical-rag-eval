@@ -1,0 +1,10 @@
+.env
+*.key
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+.cache/
+*.faiss
+.DS_Store
