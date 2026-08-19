@@ -49,11 +49,11 @@ Note that traceability (being able to point to which passages the answer came fr
 
 ## Failure-Mode Breakdown
 
-Of 15 analysed errors (full details in [`results/failures.md`](results/failures.md)):
+Of 15 analysed errors (full details in [`failures.md`](failures.md)):
 
 | Failure Mode | Count | Key Pattern |
 |---|---|---|
-| Retrieval miss | 1 | Semantic gap between query and passage |
+| Retrieval miss | 1 | Very short query carries too little signal to match |
 | Retrieval hit, wrong generation | 7 | Affirmation bias; parametric knowledge overriding context |
 | Synthesis-requiring | 3 | Multi-evidence integration needed; local retrieval insufficient |
 | Ambiguous gold label | 4 | "Maybe" label on questions where "yes" is defensible |
@@ -94,13 +94,12 @@ echo "GROQ_API_KEY=your_key_here" > .env
 
 Then either run the notebook:
 ```bash
-cd notebooks
 jupyter notebook 01_full_eval.ipynb
 ```
 
 Or run programmatically:
 ```python
-from src.pipeline import run_full_pipeline
+from pipeline import run_full_pipeline
 summary, baseline, dense, hybrid = run_full_pipeline(sample_size=200)
 ```
 
