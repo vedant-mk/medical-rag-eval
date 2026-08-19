@@ -1,0 +1,22 @@
+{
+  "sample_size": 200,
+  "corpus_size": 676,
+  "baseline": {
+    "label": "No retrieval",
+    "n_questions": 200,
+    "accuracy": 0.515,
+    "hit_rate": 0.0
+  },
+  "dense_rag": {
+    "label": "Dense RAG",
+    "n_questions": 200,
+    "accuracy": 0.685,
+    "hit_rate": 0.995
+  },
+  "hybrid_rag": {
+    "label": "Hybrid RAG",
+    "n_questions": 200,
+    "accuracy": 0.675,
+    "hit_rate": 0.98
+  }
+}
