@@ -19,7 +19,7 @@ The system's retrieval hit-rate is 99.5% — almost perfect. The bottleneck is o
 
 ## Category 1: Retrieval Miss
 
-### Error 1 — PubID 15483019
+### Error 1 — PubID 11570976
 **Question:** Is eligibility for a chemotherapy protocol a good prognostic factor for invasive bladder cancer after radical cystectomy?
 **Gold:** yes | **Predicted:** no | **Retrieval hit:** False
 
